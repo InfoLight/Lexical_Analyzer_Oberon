@@ -1,0 +1,216 @@
+MODULE       keyword 'MODULE'
+Circle       identifier
+;       punctuation symbol semicolon
+IMPORT       keyword 'IMPORT'
+Shape       identifier
+,       punctuation symbol comma
+Out       identifier
+;       punctuation symbol semicolon
+TYPE       keyword 'TYPE'
+Circle       identifier
+*       punctuation symbol star
+=       punctuation symbol equal
+POINTER       keyword 'POINTER'
+TO       keyword 'TO'
+CircleDesc       identifier
+;       punctuation symbol semicolon
+CircleDesc       identifier
+*       punctuation symbol star
+=       punctuation symbol equal
+RECORD       keyword 'RECORD'
+(       punctuation symbol open parenthesis
+Shape       identifier
+.       punctuation symbol dot
+ShapeDesc       identifier
+)       punctuation symbol close parenthesis
+radius       identifier
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+;       punctuation symbol semicolon
+END       keyword 'END'
+;       punctuation symbol semicolon
+PROCEDURE       keyword 'PROCEDURE'
+(       punctuation symbol open parenthesis
+self       identifier
+:       punctuation symbol colon
+Circle       identifier
+)       punctuation symbol close parenthesis
+getRadius       identifier
+*       punctuation symbol star
+(       punctuation symbol open parenthesis
+)       punctuation symbol close parenthesis
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+;       punctuation symbol semicolon
+BEGIN       keyword 'BEGIN'
+RETURN       keyword 'RETURN'
+self       identifier
+.       punctuation symbol dot
+radius       identifier
+;       punctuation symbol semicolon
+END       keyword 'END'
+getRadius       identifier
+;       punctuation symbol semicolon
+PROCEDURE       keyword 'PROCEDURE'
+(       punctuation symbol open parenthesis
+self       identifier
+:       punctuation symbol colon
+Circle       identifier
+)       punctuation symbol close parenthesis
+setRadius       identifier
+*       punctuation symbol star
+(       punctuation symbol open parenthesis
+newradius       identifier
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+BEGIN       keyword 'BEGIN'
+self       identifier
+.       punctuation symbol dot
+radius       identifier
+:=       punctuation symbol assign
+newradius       identifier
+;       punctuation symbol semicolon
+END       keyword 'END'
+setRadius       identifier
+;       punctuation symbol semicolon
+PROCEDURE       keyword 'PROCEDURE'
+Make       identifier
+*       punctuation symbol star
+(       punctuation symbol open parenthesis
+x       identifier
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+;       punctuation symbol semicolon
+y       identifier
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+;       punctuation symbol semicolon
+radius       identifier
+:       punctuation symbol colon
+INTEGER       predefined identifier 'INTEGER
+)       punctuation symbol close parenthesis
+:       punctuation symbol colon
+Circle       identifier
+;       punctuation symbol semicolon
+VAR       keyword 'VAR'
+self       identifier
+:       punctuation symbol colon
+Circle       identifier
+;       punctuation symbol semicolon
+BEGIN       keyword 'BEGIN'
+NEW       predefined identifier 'NEW'
+(       punctuation symbol open parenthesis
+self       identifier
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+self       identifier
+^       punctuation symbol arrow up
+.       punctuation symbol dot
+moveTo       identifier
+(       punctuation symbol open parenthesis
+x       identifier
+,       punctuation symbol comma
+y       identifier
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+self       identifier
+^       punctuation symbol arrow up
+.       punctuation symbol dot
+setRadius       identifier
+(       punctuation symbol open parenthesis
+radius       identifier
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+RETURN       keyword 'RETURN'
+self       identifier
+;       punctuation symbol semicolon
+END       keyword 'END'
+Make       identifier
+;       punctuation symbol semicolon
+PROCEDURE       keyword 'PROCEDURE'
+(       punctuation symbol open parenthesis
+self       identifier
+:       punctuation symbol colon
+Circle       identifier
+)       punctuation symbol close parenthesis
+draw       identifier
+*       punctuation symbol star
+(       punctuation symbol open parenthesis
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+BEGIN       keyword 'BEGIN'
+Out       identifier
+.       punctuation symbol dot
+String       identifier
+(       punctuation symbol open parenthesis
+Drawing a Circle at:(       string literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+Int       identifier
+(       punctuation symbol open parenthesis
+self       identifier
+^       punctuation symbol arrow up
+.       punctuation symbol dot
+getX       identifier
+(       punctuation symbol open parenthesis
+)       punctuation symbol close parenthesis
+,       punctuation symbol comma
+1       integer literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+String       identifier
+(       punctuation symbol open parenthesis
+,       string literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+Int       identifier
+(       punctuation symbol open parenthesis
+self       identifier
+^       punctuation symbol arrow up
+.       punctuation symbol dot
+getY       identifier
+(       punctuation symbol open parenthesis
+)       punctuation symbol close parenthesis
+,       punctuation symbol comma
+1       integer literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+String       identifier
+(       punctuation symbol open parenthesis
+), radius        string literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+Int       identifier
+(       punctuation symbol open parenthesis
+self       identifier
+^       punctuation symbol arrow up
+.       punctuation symbol dot
+getRadius       identifier
+(       punctuation symbol open parenthesis
+)       punctuation symbol close parenthesis
+,       punctuation symbol comma
+1       integer literal
+)       punctuation symbol close parenthesis
+;       punctuation symbol semicolon
+Out       identifier
+.       punctuation symbol dot
+Ln       identifier
+;       punctuation symbol semicolon
+END       keyword 'END'
+draw       identifier
+;       punctuation symbol semicolon
+END       keyword 'END'
+Circle       identifier
+.       punctuation symbol dot
