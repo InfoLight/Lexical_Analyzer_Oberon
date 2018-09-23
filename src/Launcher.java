@@ -4,7 +4,7 @@
 public class Launcher {
     public static void main(String[] args) {
 
-        LexicalAnalyzer lexicalAnalyzer = new LexicalAnalyzer("input.txt", "output.txt");
+        LexicalAnalyzer lexicalAnalyzer = new LexicalAnalyzer("in.txt", "out.txt");
         lexicalAnalyzer.launch();
 
     }
